@@ -6,13 +6,13 @@ import { Controller, Get } from '@nestjs/common';
 // the class will route incoming requests
 @Controller('/app')
 export class AppController {
-    @Get('/asdf')
-    getRootRoute() {
-        return 'hi there!';
-    }
+  @Get('/hi')
+  getRootRoute() {
+    return 'hi there!';
+  }
 
-    @Get('/bye')
-    getByeThere() {
-        return 'Bye there!';
-    }
+  @Get('/bye')
+  getByeThere() {
+    return 'Bye there!';
+  }
 }
